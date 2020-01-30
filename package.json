@@ -4,7 +4,8 @@
   "description": "A starter repo for the ACA Advanced `My First Web Server` project.",
   "main": "state.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "coveralls": "jest --coverage && cat ./tests/coverage/lcov.info | coveralls"
   },
   "repository": {
     "type": "git",
@@ -18,5 +19,8 @@
   "homepage": "https://github.com/melonunderground/advanced-first-web-server#readme",
   "dependencies": {
     "express": "^4.16.3"
+  },
+  "devDependencies": {
+    "coveralls": "^3.0.9"
   }
 }
